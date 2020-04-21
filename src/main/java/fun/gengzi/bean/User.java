@@ -4,6 +4,7 @@ package fun.gengzi.bean;
 import lombok.*;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * @Data  包含
@@ -14,9 +15,13 @@ import java.io.Serializable;
  */
 @Data
 public class User implements Serializable {
-//    @NonNull
+    @NonNull
     private String username;
-//    @NonNull
+    @NonNull
     private String passwrod;
+
+    public User() {
+
+    }
 
 }
